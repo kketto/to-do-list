@@ -1,7 +1,0 @@
-<button class="clearAll" (click)="onClear()">Clear All</button>
-
-<div>
-    <button *ngFor="let empty of pages; let i = index" (click)="onClick(i)"
-        [class.active]="i === pageIndex">{{i+1}}</button>
-
-</div>
