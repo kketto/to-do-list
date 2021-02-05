@@ -1,0 +1,12 @@
+<form [formGroup]="form" (submit)="onSubmit()">
+    <input formControlName="text" type="text">
+    <button type="submit" [style.backgroundColor]="buttonColor">
+        <ng-container *ngIf="edit">
+            Save
+        </ng-container>
+
+        <ng-container *ngIf="!edit">
+            {{buttonName}}
+        </ng-container>
+    </button>
+</form>

@@ -1,0 +1,15 @@
+<a routerLink="/">
+    < </a>
+
+        <div *ngIf="item">
+
+            <div class="title">
+
+                {{item.title}}
+            </div>
+
+            <app-input (save)="onAddComment($event)" buttonName="Comment" buttonColor="#9898f7"></app-input>
+
+            <app-comment *ngFor="let comment of item.comments" [comment]="comment"></app-comment>
+
+        </div>

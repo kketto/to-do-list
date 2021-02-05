@@ -1,0 +1,10 @@
+<div class="container">
+    <input [formControl]="searchForm.controls.searchTerm" type="search">
+    <div class="buttons">
+
+        <button [class.active]="activeFilter===FilterType.All" (click)="onClick(FilterType.All)">All</button>
+        <button [class.active]="activeFilter===FilterType.Done" (click)="onClick(FilterType.Done)">Done</button>
+        <button [class.active]="activeFilter===FilterType.Pending"
+            (click)="onClick(FilterType.Pending)">Pending</button>
+    </div>
+</div>
